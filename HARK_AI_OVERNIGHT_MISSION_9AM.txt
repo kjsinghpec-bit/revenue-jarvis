@@ -89,7 +89,8 @@ that the deadline was met.
    9940a61494f5d1bf33ffa4ab632c4214e819eed159098c4cc875b5f51a33314b
 
    The code repository alone does not contain the large database/scan
-   assets. At prompt creation, the archive upload was still pending.
+   assets. The latest checked GitHub draft showed "Upload failed" for the
+   archive; do not assume it is publicly downloadable. Check Releases again.
    If you are on the Mac, the prepared archive is at:
    exports/night-handoff-20261013/revenue-jarvis-complete-handoff-20261013.zip
 
@@ -276,6 +277,113 @@ correct assertion, preserving a clear explanation and meaningful coverage.
 8. RETRIEVAL AND ANSWER DESIGN FOR AN OFFICER
 ======================================================================
 
+MANDATORY: READ ALL 27 STATUTORY DOCUMENTS, NOT JUST SEARCH RESULTS
+
+Read every one of the 27 existing legal-source documents in FULL, in
+bounded chapter/section batches if necessary. This includes Acts, Rules
+and separately stored manual chapters; it is not a claim that the corpus
+contains every law applicable to Punjab. Do not replace this task with
+reading titles, summaries, embeddings, the first page, or the top three
+retrieval results.
+
+Inventory confirmed from the current project database:
+01. consolidation_act_1948_rules_1949:
+    East Punjab Holdings (Consolidation and Prevention of Fragmentation)
+    Act, 1948, with Rules, 1949.
+02. hindu_succession_act_1956: Hindu Succession Act, 1956.
+03. indian_stamp_act_1899: Indian Stamp Act, 1899, stored Punjab/Haryana text.
+04. plam_ch10_record_of_rights: Punjab Land Administration Manual,
+    Chapter X, Record of Rights.
+05. plam_ch13_partitions: Punjab Land Administration Manual,
+    Chapter XIII, Partitions.
+06. plam_ch15_collection_land_revenue: Punjab Land Administration Manual,
+    Chapter XV, Collection of Land Revenue.
+07. plra_1887: Punjab Land Revenue Act, 1887.
+08. plrm_ch05: Punjab Land Records Manual, Chapter 5,
+    Changes in Territorial Jurisdiction.
+09. plrm_ch06: Punjab Land Records Manual, Chapter 6,
+    Fluvial (Riverain) Assessments.
+10. plrm_ch07: Punjab Land Records Manual, Chapter 7,
+    Record of Rights, Jamabandi and Mutations.
+11. plrm_ch09: Punjab Land Records Manual, Chapter 9,
+    Harvest Inspections / Girdawari.
+12. plrm_ch10: Punjab Land Records Manual, Chapter 10,
+    Agricultural Registers / Statistics.
+13. plrm_ch11: Punjab Land Records Manual, Chapter 11,
+    Reports and Returns / Weather and Crop Reports.
+14. plrm_ch12: Punjab Land Records Manual, Chapter 12,
+    Rain-gauges, Rainfall and Snowfall.
+15. plrm_ch13: Punjab Land Records Manual, Chapter 13, Crop Forecasts.
+16. plrm_ch14: Punjab Land Records Manual, Chapter 14, Current Prices.
+17. plrm_ch17: Punjab Land Records Manual, Chapter 17, Gazetteers.
+18. plrm_ch18: Punjab Land Records Manual, Chapter 18,
+    Procedure in Partition Cases.
+19. ppp_eviction_act_1973: Punjab Public Premises and Land
+    (Eviction and Rent Recovery) Act, 1973.
+20. ppp_eviction_rules_1974: Punjab Public Premises and Land
+    (Eviction and Rent Recovery) Rules, 1974.
+21. punjab_tenancy_act_1887: Punjab Tenancy Act, 1887.
+22. registration_act_1908: Registration Act, 1908.
+23. revenue_appeals_act_1956: Punjab Revenue Appeals and Proceedings
+    (Disposal and Restoration) Act, 1956.
+24. rfctlarr_2013: Right to Fair Compensation and Transparency in Land
+    Acquisition, Rehabilitation and Resettlement Act, 2013.
+25. tpa_1882: Transfer of Property Act, 1882.
+26. vcl_act_1961: Punjab Village Common Lands (Regulation) Act, 1961.
+27. vcl_rules_1964: Punjab Village Common Lands (Regulation) Rules, 1964.
+
+Verify this inventory against data/laws/ and the database. If any document
+is missing from your workspace, report the specific missing slug; do not
+substitute model memory for its text.
+
+For EACH document:
+1. Record filename, slug, title, source URL, jurisdiction, content hash,
+   completeness flags and stored revision/date information.
+2. Read the entire available text, including definitions, schedules,
+   exceptions, amendments included in the file and subordinate rules.
+3. Record the exact text spans/sections actually reviewed. A script merely
+   opening a file does not count as you reading and understanding it.
+4. Check that ingested section/rule/paragraph boundaries and titles match
+   the source. Flag omitted provisions, mixed jurisdictions, broken
+   numbering, accidental headings and incomplete text.
+5. Map the functions relevant to Punjab revenue work: records/mutation,
+   partition, tenancy, consolidation, shamlat/common land, eviction,
+   registration/stamp duty, acquisition and appellate procedures.
+6. Extract officer powers, jurisdiction, procedural steps, appeals,
+   restrictions, time limits, fees/fines and applicable conditions ONLY
+   where explicitly supported. Keep the exact provision and quote.
+7. Distinguish explicit prohibitions from "no supporting provision found".
+   Absence from this corpus does not prove an officer has no power.
+8. Test parser/index coverage for every document and add meaningful
+   representative retrieval assertions for every document, with an
+   expected provision grounded in its actual text. This is separate from
+   the twenty-question live acceptance set.
+
+Create:
+reports/hark_overnight/LAW_CORPUS_REVIEW.md
+reports/hark_overnight/law_reading_coverage.json
+reports/hark_overnight/OFFICER_AUTHORITY_MATRIX.md
+
+The matrix must identify proceeding, officer, action, conditions,
+explicit restriction if any, appeal/revision route if evidenced, and
+source/provision/quote. Never generate an unsupported CAN/CANNOT label.
+
+Use this review to improve provision parsing, legal-compound tokenization,
+aliases, evidence selection and source-specific answer grounding. Reviewed
+notes help navigation but must not replace the underlying cited legal text.
+Any review finding requiring a law-corpus change must have its own verified
+staged change and tests; preserve the original baseline for comparison.
+
+Check the stored text's currency/applicability before calling a proposition
+"current Punjab law". If verification is missing, disclose it. Do not mix
+a Haryana provision into a Punjab answer because both occur in one file.
+Do not treat a manual, commentary or book as authority to override an
+applicable statutory provision. Explain demonstrated conflicts instead.
+
+This full-corpus review is mandatory overnight work. If incomplete at
+deadline, list the exact unread documents/spans and explain the blocker;
+never claim "all 27 read" on the basis of metadata or a model summary.
+
 Check native Gurmukhi aliases, Unicode tokenization, legal compounds,
 chunk boundaries, neighboring context, evidence windows and RRF/xref bias.
 Keep book and law pools distinct. Change their weights only if measured
@@ -457,6 +565,8 @@ Create reports/hark_overnight/MORNING_REPORT.md and include:
 3. Files changed and final commit/tag/package checksum.
 4. Baseline versus final tests, including every remaining failure.
 5. Staged/active database identifiers and import/law-preservation reports.
+   Also include all-27-document reading coverage and the source-backed
+   officer authority matrix. Clearly name any incomplete/unread document.
 6. Twenty ordinary live answers and adversarial/uncertainty results.
 7. At least five concise source-checked demonstration answers I can inspect.
 8. Actual cold/warm timings, p50/p95, memory observations and bottleneck.
