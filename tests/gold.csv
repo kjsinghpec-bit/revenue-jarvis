@@ -1,0 +1,21 @@
+question_id,topic,language,question,gold_pages,notes,law_gold
+Q01,partition,en,Which sections of the Punjab Land Revenue Act 1887 deal with partition of land?,167,Chapter 8 opening,"PLRA 1887:110,111"
+Q02,partition,en,At which stages can an appeal be filed in a partition case?,168,s.116(1) and later stages,"PLRA 1887:116,117,118|PLAM Ch XIII:455"
+Q03,partition,en,What must the revenue officer do when a question of title arises in a partition application?,173-174,,"PLRA 1887:116,117"
+Q04,partition,pa,ਤਰੀਕਾ ਤਕਸੀਮ ਕਿਵੇਂ ਤਜਵੀਜ਼ ਅਤੇ ਪ੍ਰਵਾਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ?,175-177,mode of partition with sample order,
+Q05,partition,hi,प्राइवेट तकसीम को रिकॉर्ड में अमल में कब लाया जाता है?,178-179,private partition,
+Q06,partition,en,Can a revenue officer partition land lying inside abadi deh?,169-170,Abadi Deh (Record of Rights) Act 2021 s.18,"PLRA 1887:110,111"
+Q07,consolidation,en,Which records are prepared during consolidation of holdings (murabbabandi)?,27-29,,"EPH Consolidation Act 1948 + Rules 1949:14,15,16,19,20,21"
+Q08,consolidation,en,"How much land is reserved for common purposes such as school, cremation ground and panchayat ghar during consolidation?",33-51,reservation tables,
+Q09,consolidation,pa,ਮੁਰੱਬੇਬੰਦੀ ਸਕੀਮ ਦਾ ਨਮੂਨਾ ਦੱਸੋ,52-56,sample scheme village Bathli,
+Q10,consolidation,en,What does the naksha haqdarwar show and how is the standard value of each khasra fixed in consolidation?,28,,
+Q11,common_land,en,What is shamlat deh?,229-231,,PVCL Act 1961:2
+Q12,common_land,en,Which lands are excluded from shamlat deh under section 2(g) of the Village Common Lands Act 1961?,228;233-236,,PVCL Act 1961:2
+Q13,common_land,en,Under which section can a panchayat seek eviction of an unauthorised occupant of shamlat land and before whom?,246-247,s.7 VCL Act,PVCL Act 1961:7
+Q14,common_land,hi,शामलात ज़मीन पट्टे पर लेने के लिए अयोग्यताएं और पाबंदियां क्या हैं?,238-239,Rule 6(1)(b),PVCL Rules 1964:6
+Q15,common_land,en,For which purposes and with whose approval can a panchayat sell shamlat land?,240-243,Rule 12-A,"PVCL Rules 1964:12,13,13A"
+Q16,price_fixation,en,How is the price fixed when a government department buys land directly from owners through the district price fixation committee?,278-279,,
+Q17,price_fixation,en,How is the multiplication factor applied to market value for rural land under the 2013 land acquisition act?,284-286,,"RFCTLARR 2013:26,27,28,30"
+Q18,price_fixation,pa,ਅਵਾਰਡ ਤੋਂ ਅਸਹਿਮਤ ਵਿਅੱਕਤੀ ਮੁਆਵਜ਼ਾ ਵਧਾਉਣ ਲਈ ਕੀ ਕਰ ਸਕਦਾ ਹੈ?,287-288,reference / redetermination s.64 / s.73,"RFCTLARR 2013:64,73,74"
+Q19,mutation,en,When may a duplicate (musanna) of a lost mutation be prepared?,118-120,,
+Q20,abadi,hinglish,abadi deh aur lal lakir ka matlab kya hai,248-249,,

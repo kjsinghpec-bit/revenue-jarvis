@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+# never commit the copyrighted scan itself or page images
+*.pdf
+data/book/images/
+data/laws/raw/
+data/laws/_tools/
+data/*.db-wal
+data/*.db-shm
+evaluation.csv
+
+exports/
+*.db
+*.db-wal
+*.db-shm
+*.zip
+.agents/
+HANDOFF_TEST_OUTPUT.txt

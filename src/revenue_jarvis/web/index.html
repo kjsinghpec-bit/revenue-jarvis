@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J.A.R.V.I.S. · Revenue</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="boot" class="boot">
+  <canvas id="bootOrb" width="220" height="220"></canvas>
+  <pre id="bootLog"></pre>
+</div>
+
+<header class="hud-top">
+  <div class="brand"><span class="dot"></span>J.A.R.V.I.S. <small>REVENUE</small></div>
+  <div class="chips" id="chips"></div>
+  <div class="clock" id="clock"></div>
+</header>
+
+<main class="grid">
+  <aside class="panel left">
+    <h3><span>01</span> LIBRARY</h3>
+    <div id="library"></div>
+    <h3><span>02</span> RECENT</h3>
+    <ol id="history" class="history"></ol>
+  </aside>
+
+  <section class="center">
+    <div class="reactor-wrap">
+      <canvas id="orb" width="420" height="420"></canvas>
+      <div class="state" id="state">STANDBY</div>
+    </div>
+    <div class="transcript" id="transcript"></div>
+  </section>
+
+  <aside class="panel right">
+    <h3><span>03</span> EVIDENCE</h3>
+    <div id="evidence" class="evidence"><p class="muted">Sources appear here as Jarvis cites them.</p></div>
+  </aside>
+</main>
+
+<footer class="console">
+  <button id="mic" class="mic" title="Hold Space or click to talk">
+    <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2z"/></svg>
+  </button>
+  <input id="q" autocomplete="off" placeholder="Ask in English, ਪੰਜਾਬੀ or हिन्दी…  (hold Space to speak)">
+  <select id="lang" title="Speech language">
+    <option value="auto">Auto</option><option value="en">English</option><option value="pa">ਪੰਜਾਬੀ</option><option value="hi">हिन्दी</option>
+  </select>
+  <button id="voiceToggle" class="toggle on" title="Jarvis speaks replies">🔊</button>
+  <button id="send" class="send">SEND</button>
+</footer>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-body">
+    <button class="close" id="closeModal">✕</button>
+    <h4 id="modalTitle"></h4>
+    <p id="modalReview" class="ocr-label"></p>
+    <div class="modal-grid">
+      <img id="modalImg" alt="original page">
+      <pre id="modalText"></pre>
+    </div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

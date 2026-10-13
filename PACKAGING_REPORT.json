@@ -1,0 +1,115 @@
+{
+  "snapshot_time": "2026-10-13T16:20:49.214247+00:00",
+  "files_copied": 1342,
+  "databases": [
+    {
+      "path": "data/jarvis.before-grounding-20261013.db",
+      "corpus_sha256": "3db335a32dcf237b20a5a8fc605cf1d9cfd4e5d0cee66c4fe9e940e01cca5974",
+      "integrity": "ok",
+      "removed_qa_rows": 0
+    },
+    {
+      "path": "data/jarvis.db",
+      "corpus_sha256": "76951771de225bf41967e267720a38b40d42b0b771d4f3b1adde65ac80bed778",
+      "integrity": "ok",
+      "removed_qa_rows": 6
+    },
+    {
+      "path": "reports/grounding_fixes/jarvis.staged.db",
+      "corpus_sha256": "9faeb7f1e551cbda87d53261b9f7508186c6687e62798c5ec0d6c9d95c79b8b6",
+      "integrity": "ok",
+      "removed_qa_rows": 0
+    },
+    {
+      "path": "reports/ocr_eval/jarvis.db.preeval-backup",
+      "corpus_sha256": "9faeb7f1e551cbda87d53261b9f7508186c6687e62798c5ec0d6c9d95c79b8b6",
+      "integrity": "ok",
+      "removed_qa_rows": 0
+    },
+    {
+      "path": "reports/ocr_repair/backup/jarvis.production-20261013-141120.db",
+      "corpus_sha256": "9faeb7f1e551cbda87d53261b9f7508186c6687e62798c5ec0d6c9d95c79b8b6",
+      "integrity": "ok",
+      "removed_qa_rows": 2
+    },
+    {
+      "path": "reports/ocr_repair/backup/jarvis.rollback-before-activation-20261013-193309.db",
+      "corpus_sha256": "9faeb7f1e551cbda87d53261b9f7508186c6687e62798c5ec0d6c9d95c79b8b6",
+      "integrity": "ok",
+      "removed_qa_rows": 2
+    },
+    {
+      "path": "reports/ocr_repair/jarvis.staged.db",
+      "corpus_sha256": "76951771de225bf41967e267720a38b40d42b0b771d4f3b1adde65ac80bed778",
+      "integrity": "ok",
+      "removed_qa_rows": 2
+    }
+  ],
+  "excluded_files": [
+    {
+      "path": ".DS_Store",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": ".env",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "data/jarvis.db-shm",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "data/jarvis.db-wal",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "data/timings.jsonl",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/grounding_fixes/jarvis.staged.db-shm",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/grounding_fixes/jarvis.staged.db-wal",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/ocr_repair/build_staged.log",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/ocr_repair/jarvis_server.log",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/ocr_repair/run_best.log",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/ocr_repair/run_best_full.log",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    },
+    {
+      "path": "reports/ocr_repair/run_selected_full.log",
+      "reason": "credentials, logs, caches or SQLite sidecar"
+    }
+  ],
+  "excluded_directories": [
+    ".aws",
+    ".codex",
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "exports"
+  ],
+  "notes": [
+    "All SQLite files use the SQLite backup API, not raw copies of live WAL databases.",
+    "Personal question history removed from shared database copies only.",
+    "Original source databases and production corpus untouched.",
+    "Model caches and virtual environments are installed separately.",
+    "External teamwork work may continue after this timestamp. This is a snapshot, not a completed release."
+  ]
+}

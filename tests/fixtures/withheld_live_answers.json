@@ -1,0 +1,313 @@
+{
+  "provenance": "Recorded failed Claude responses and retrieved evidence from local Jarvis tests, 13 October 2026. Not an independent legal accuracy dataset.",
+  "cases": [
+    {
+      "case": "5",
+      "raw": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "The book states that the power to decide partition cases in Punjab where the petitioners are Non-Resident Indians has been given only to District Revenue Officers.",
+            "source_ids": [
+              "B1",
+              "B6"
+            ],
+            "support": [
+              {
+                "source_id": "B1",
+                "quote": "ਪ੍ਵਾਸੀ ਭਾਰਤੀ (ਨਾਨ ਰੈਜੀਡੈਂਟਸ ਇੰਡੀਅਨ) ਹਨ ਉਨ੍ਹਾਂ ਕੇਸਾਂ ਦਾ ਫ਼ੈਸਲਾ |"
+              },
+              {
+                "source_id": "B6",
+                "quote": "ਕਰਨ ਦੇ ਅਧਿਕਾਰ ਕੇਵਲ ਜ਼ਿਲ੍ਹਾ ਮਾਲ ਅਫ਼ਸਰਾਂ ਨੂੰ ਨੋਟੀਫਿਕੇਸ਼ਨ ਮਿਤੀ"
+              }
+            ]
+          },
+          {
+            "text": "The book says this power was given by a notification dated 1.12.2008, a copy of which is Annexure-8 in the book.",
+            "source_ids": [
+              "B6"
+            ],
+            "support": [
+              {
+                "source_id": "B6",
+                "quote": "___1.12.2008 ਰਾਂਹੀ ਦਿੱਤੇ ਗਏ ਹਨ ਜਿਸ ਦੀ ਨਕਲ ਅਨੁਲੱਗ-8 ਹੈ।"
+              }
+            ]
+          },
+          {
+            "text": "The book gives the reason as sparing NRIs the trouble of getting their cases disposed of and allowing a quick decision at the district level.",
+            "source_ids": [
+              "B6"
+            ],
+            "support": [
+              {
+                "source_id": "B6",
+                "quote": "ਪ੍ਰਬੰਧ ਇਸ ਲਈ ਕੀਤਾ ਗਿਆ ਹੈ ਕਿ ਪ੍ਰਵਾਸੀ ਭਾਰਤੀਆਂ ਨੂੰ ਆਪਣੇ ਕੇਸਾਂ ਚ"
+              }
+            ]
+          },
+          {
+            "text": "For comparison, the book states that under section 126 the Assistant Collector 1st Grade is the competent officer for partition generally, with powers given to Tehsildars and Naib Tehsildars by notifications.",
+            "source_ids": [
+              "B1"
+            ],
+            "support": [
+              {
+                "source_id": "B1",
+                "quote": "ਪਹਿਲਾ ਜ਼ਮੀਨ ਦੀ ਤਕਸੀਮ ਕਰਨ ਲਈ ਸਮਰੱਥ ਅਧਿਕਾਰੀ ਹੈ।ਇਸ"
+              }
+            ]
+          }
+        ],
+        "law_support": [],
+        "conflicts": [],
+        "missing_facts": [],
+        "caveats": [
+          "The supplied excerpts of the Act (L1 to L6) do not contain section 126 or the 1.12.2008 notification, so the NRI-specific rule rests on the book alone.",
+          "OCR of the book is unverified against the scan; the page 152 text is partly garbled, including the word for 'notification' and the sentence about reasons. The notification should be verified from official sources before reliance.",
+          "The excerpts do not show whether the notification is still in force today."
+        ]
+      },
+      "evidence": [
+        {
+          "sid": "B1",
+          "chunk_id": "6d40da820c2195a6",
+          "source_type": "book",
+          "text": "152 |\na . 1\nਚਪਟਰ 8 ਰ |\nਜ਼ਮੀਨ ਦੀ ਤਕਸੀਮ ਕਰਨੀ\nਪੰਜਾਬ ਲੈਂਡ ਰੈਵੀਨਿਊ ਐਕਟ, 1887 ਦੀਆਂ 110 ਤੋਂ ਲੈ ਕੇ 126\nਤੱਕ ਦੀਆਂ ਧਾਰਾਵਾਂ ਵਿੱਚ ਜ਼ਮੀਨ ਦੀ ਤਕਸੀਮ ਕਰਨ ਦਾ ਉਪਬੰਧ ਕੀਤਾ\nਗਿਆ ਹੈ।ਧਾਰਾ 126 ਦੇ ਉਪਬੰਧ ਮੁਤਾਬਿਕ ਸਹਾਇਕ ਕਨੈਕਟਰ ਦਰਜ਼ਾ |\nਪਹਿਲਾ ਜ਼ਮੀਨ ਦੀ ਤਕਸੀਮ ਕਰਨ ਲਈ ਸਮਰੱਥ ਅਧਿਕਾਰੀ ਹੈ।ਇਸ |\nਐਕਟ ਵਿੱਚ ਪੰਜਾਬ ਦੇ ਸਾਰੇ ਹੀ ਤਹਿਸੀਲਦਾਰਾਂ ਅਤੇ ਨਾਇਬ ਈਂ\":\nਤਹਿਸੀਲਦਾਰਾਂ ਨੂੰ ਜ਼ਮੀਨ ਦੀ ਤਕਸੀਮ ਕਰਨ ਲਈ ਸਹਾਇਕ ਕਲੈਕਟਰ |\nTI ਪਹਿਲਾ ਦੇ ਅਧਿਕਾਰ ਅਧਿਸੂਚਨਾ ਜਿਨ੍ਹਾਂ ਦੀਆਂ set ane |\nਅਨੁਲੱਗ-3 ਅਤੇ 4 ਤੇ ਹਨ, ਰਾਂਹੀਂ ਦਿੱਤੇ ਗਏ ਹਨ। ਇੱਥੇ ਇਹ ਦੱਸਣਾ |\nਯੋਗ ਹੈ ਕਿ ਪੰਜਾਬ ਵਿੱਚ ਤਕਸੀਮ ਦੇ ਜਿਹੜੇ ਕੇਸਾਂ ਵਿੱਚ ਪਟੀਸ਼ਨਰ |\nਪ੍ਵਾਸੀ ਭਾਰਤੀ (ਨਾਨ ਰੈਜੀਡੈਂਟਸ ਇੰਡੀਅਨ) ਹਨ ਉਨ੍ਹਾਂ ਕੇਸਾਂ ਦਾ ਫ਼ੈਸਲਾ |\nਕਰਨ ਦੇ ਅਧਿਕਾਰ ਕੇਵਲ ਜ਼ਿਲ੍ਹਾ ਮਾਲ ਅਫ਼ਸਰਾਂ ਨੂੰ ਨੋਟੀਫਿਕੇਸ਼ਨ ਮਿਤੀ",
+          "doc_title": "Jivtesh Zameen Di Guide (ਜਿਵਤੇਸ਼ ਜ਼ਮੀਨ ਦੀ ਗਾਈਡ) - Sohan Lal Bhumbak, PCS (Retd.), Krishna Publishing House, 2022",
+          "short_name": "Bhumbak",
+          "pdf_page": 167,
+          "printed_page": "152",
+          "section": null,
+          "source_url": "private copy (owner's PDF)",
+          "score": 0.0303,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": null,
+          "locator_verified": true,
+          "ocr_status": "needs_review",
+          "scan_verified": false,
+          "citation": "[Bhumbak, Book p.152; PDF p.167]",
+          "answer_id": "e0823dd6-538d-45dc-9a5a-5a4098b878c0"
+        },
+        {
+          "sid": "B6",
+          "chunk_id": "3dead4aade28254d",
+          "source_type": "book",
+          "text": "ਪ੍ਵਾਸੀ ਭਾਰਤੀ (ਨਾਨ ਰੈਜੀਡੈਂਟਸ ਇੰਡੀਅਨ) ਹਨ ਉਨ੍ਹਾਂ ਕੇਸਾਂ ਦਾ ਫ਼ੈਸਲਾ |\nਕਰਨ ਦੇ ਅਧਿਕਾਰ ਕੇਵਲ ਜ਼ਿਲ੍ਹਾ ਮਾਲ ਅਫ਼ਸਰਾਂ ਨੂੰ ਨੋਟੀਫਿਕੇਸ਼ਨ ਮਿਤੀ\n___1.12.2008 ਰਾਂਹੀ ਦਿੱਤੇ ਗਏ ਹਨ ਜਿਸ ਦੀ ਨਕਲ ਅਨੁਲੱਗ-8 ਹੈ। ਇਹ ੍\nਪ੍ਰਬੰਧ ਇਸ ਲਈ ਕੀਤਾ ਗਿਆ ਹੈ ਕਿ ਪ੍ਰਵਾਸੀ ਭਾਰਤੀਆਂ ਨੂੰ ਆਪਣੇ ਕੇਸਾਂ ਚ\nਦੇ ਨਿਪਟਾਰੇ ਲਈ ਖੱਜਲ ਖੁਆਰ ਨਾ ਹੋਣਾ ਪਵੇ ਅਤੇ ਫ਼ੈਸਲਾ ਜ਼ਿਲਾ doe |\nਤੇ ਛੇਤੀ ਹੋ ਸਕੇ। = IS SE |\nਤਕਸੀਮ ਦੀ ਅਰਜੀ ਕੌਣ ਦੇ ਸਕਦਾ ਹੈ\nਪੰਜਾਬ ਲੈਂਡ ਰੈਵੀਨਿਊ ਐਕਟ, 1887 ਦੀ ਧਾਰਾ 111 ਮੁਤਾਬਿਕ\nਆਪਣਾ ਹਿੱਸਾ ਤਕਸੀਮ ਕਰਵਾਉਂਣ ਲਈ ਕੋਈ ਵੀ ਸਹਿ-ਮਾਲ",
+          "doc_title": "Jivtesh Zameen Di Guide (ਜਿਵਤੇਸ਼ ਜ਼ਮੀਨ ਦੀ ਗਾਈਡ) - Sohan Lal Bhumbak, PCS (Retd.), Krishna Publishing House, 2022",
+          "short_name": "Bhumbak",
+          "pdf_page": 167,
+          "printed_page": "152",
+          "section": null,
+          "source_url": "private copy (owner's PDF)",
+          "score": 0.0,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": null,
+          "locator_verified": true,
+          "ocr_status": "needs_review",
+          "scan_verified": false,
+          "citation": "[Bhumbak, Book p.152; PDF p.167]",
+          "answer_id": "e0823dd6-538d-45dc-9a5a-5a4098b878c0"
+        }
+      ]
+    },
+    {
+      "case": "6",
+      "raw": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "ਜੇ ਸਾਂਝੀ ਰੱਖੀ ਗਈ ਜ਼ਮੀਨ ਉੱਤੇ ਕੋਈ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਨਾਜਾਇਜ਼ ਕਬਜ਼ਾ ਕਰ ਲਵੇ ਤਾਂ ਦੂਜਾ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਧਾਰਾ 150 ਤਹਿਤ ਮਾਲ ਅਫ਼ਸਰ ਨੂੰ ਕਬਜ਼ਾ ਖਾਲੀ ਕਰਵਾਉਣ ਲਈ ਦਰਖ਼ਾਸਤ ਦੇ ਸਕਦਾ ਹੈ ਅਤੇ ਮਾਲ ਅਫ਼ਸਰ ਕਬਜ਼ਾ ਖਾਲੀ ਕਰਵਾ ਸਕਦਾ ਹੈ।",
+            "source_ids": [
+              "B2"
+            ],
+            "support": [
+              {
+                "source_id": "B2",
+                "quote": "ਸਹਿ-ਹਿੱਸੇਦਾਰ ਨਾਜਾਇਜ਼ ਕਬਜ਼ਾ ਕਰ ਲਵੇ ਤਾਂ ਦੂਜਾ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਧਾਰਾ"
+              }
+            ]
+          },
+          {
+            "text": "ਸ਼ਾਮਲਾਤ ਜ਼ਮੀਨ ਤੋਂ ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਨੂੰ ਬੇਦਖ਼ਲ ਕਰਨ ਲਈ ਪੰਚਾਇਤ ਪੰਜਾਬ ਵਿਲੇਜ਼ ਕੋਮਨ ਲੈਂਡਜ਼ (ਰੈਗੁਲੇਸ਼ਨ) ਐਕਟ, 1961 ਦੀ ਧਾਰਾ 7 ਤਹਿਤ ਕਲੈਕਟਰ ਦੀ ਅਦਾਲਤ ਵਿੱਚ ਪਟੀਸ਼ਨ ਦਾਇਰ ਕਰ ਸਕਦੀ ਹੈ।",
+            "source_ids": [
+              "B4"
+            ],
+            "support": [
+              {
+                "source_id": "B4",
+                "quote": "ਤਾਂ ਉਸ ਨੰ ਬੇਦਖਲ ਕਰਨ ਲਈ ਸਬੰਧਤ ਪੰਚਾਇਤ ਇੱਕ ਪਟੀਸ਼ਨ ਪੰਜਾਬ"
+              }
+            ]
+          },
+          {
+            "text": "ਪੰਚਾਇਤ ਨੂੰ ਪੰਜਾਬ ਪਬਲਿਕ ਪਰੈਮਿਸਿਜ਼ ਐਂਡ ਲੈਂਡ (ਇਵਿਕਸ਼ਨ ਐਂਡ ਰੈਂਟ ਰਿਕਵਰੀ) ਐਕਟ, 1973 ਦੀ ਧਾਰਾ 4 ਤਹਿਤ ਵੀ ਪਟੀਸ਼ਨ ਦਾਇਰ ਕਰਨ ਦਾ ਅਖ਼ਤਿਆਰ ਹੈ। ਐਕਟ ਦਾ ਨਾਮ OCR ਵਿੱਚ ਅੰਸ਼ਕ ਤੌਰ 'ਤੇ ਵਿਗੜਿਆ ਹੈ।",
+            "source_ids": [
+              "B9"
+            ],
+            "support": [
+              {
+                "source_id": "B9",
+                "quote": "ਧਾਰਾ 4 ਤਹਿਤ ਵੀ ਪਟੀਸ਼ਨ ਦਾਇਰ ਕਰਕੇ ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਨੂੰ"
+              }
+            ]
+          }
+        ],
+        "law_support": [
+          {
+            "text": "ਧਾਰਾ 150 (PLRA 1887): ਸਾਂਝੇ ਮੰਤਵਾਂ ਲਈ ਰਾਖਵੀਂ ਜ਼ਮੀਨ ਉੱਤੇ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਵੱਲੋਂ ਕਬਜ਼ਾ ਹੋਣ 'ਤੇ ਹੋਰ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਦੀ ਦਰਖ਼ਾਸਤ ਉੱਤੇ Revenue-officer ਉਸ ਨੂੰ ਬੇਦਖ਼ਲ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ ਦੁਹਰਾਉਣ ਤੋਂ ਮਨ੍ਹਾ ਕਰ ਸਕਦਾ ਹੈ; ਇਹ ਕਾਰਵਾਈ ਸਮਰੱਥ ਅਦਾਲਤ ਦੇ ਬਾਅਦ ਦੇ ਹੁਕਮ ਦੇ ਅਧੀਨ ਹੈ।",
+            "source_ids": [
+              "L1"
+            ],
+            "support": [
+              {
+                "source_id": "L1",
+                "quote": "Where land which has been reserved for the common purposes of the co-sharers therein has been encroached on by any co-sharer, a Revenue-officer may, on the application of any other co-sharer, eject the encroaching co-sharer from the land"
+              },
+              {
+                "source_id": "L1",
+                "quote": "The proceedings of the Revenue-officer under sub-section (1) shall be subject to any decree or order which may be subsequently passed by any Court of competent jurisdiction."
+              }
+            ]
+          },
+          {
+            "text": "ਧਾਰਾ 7 (PVCL Act 1961): ਪੰਚਾਇਤ ਦੀ ਦਰਖ਼ਾਸਤ 'ਤੇ ਕਲੈਕਟਰ ਪੜਤਾਲ ਕਰਕੇ ਸ਼ਾਮਲਾਤ ਦੇਹ ਦੀ ਜ਼ਮੀਨ ਦਾ ਕਬਜ਼ਾ ਪੰਚਾਇਤ ਨੂੰ ਦਿਵਾਉਂਦਾ ਹੈ; ਕਲੈਕਟਰ ਦੇ ਹੁਕਮ ਵਿਰੁੱਧ ਅਪੀਲ ਕਮਿਸ਼ਨਰ ਕੋਲ ਹੁੰਦੀ ਹੈ।",
+            "source_ids": [
+              "L3"
+            ],
+            "support": [
+              {
+                "source_id": "L3",
+                "quote": "The collector shall, on an application made to him by a panchayat"
+              },
+              {
+                "source_id": "L3",
+                "quote": "An appeal against the order of the collector under sub-section(1) shall lie to the Commissioner"
+              }
+            ]
+          }
+        ],
+        "conflicts": [],
+        "missing_facts": [
+          "ਜ਼ਮੀਨ ਸਹਿ-ਹਿੱਸੇਦਾਰਾਂ ਦੇ ਸਾਂਝੇ ਮੰਤਵਾਂ ਲਈ ਰਾਖਵੀਂ ਹੈ ਜਾਂ ਪੰਚਾਇਤ ਦੀ ਸ਼ਾਮਲਾਤ ਦੇਹ",
+          "ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਹੈ ਜਾਂ ਬਾਹਰੀ ਵਿਅਕਤੀ"
+        ],
+        "caveats": [
+          "ਕਿਤਾਬ ਦਾ OCR ਮੂਲ ਸਕੈਨ ਨਾਲ ਪੜਤਾਲਿਆ ਨਹੀਂ ਗਿਆ; ਧਾਰਾ ਨੰਬਰ ਸਕੈਨ ਅਤੇ ਸਰਕਾਰੀ ਸਰੋਤ ਤੋਂ ਪੁਸ਼ਟੀ ਮੰਗਦੇ ਹਨ।",
+          "B2 ਦੇ OCR ਵਿੱਚ ਸਤਰਾਂ ਦਾ ਕ੍ਰਮ ਅਤੇ ਕੁਝ ਅੱਖਰ ਵਿਗੜੇ ਹਨ।",
+          "ਇਹ ਮੌਜੂਦਾ ਕਾਨੂੰਨ ਦੀ ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੈ।"
+        ]
+      },
+      "evidence": [
+        {
+          "sid": "B2",
+          "chunk_id": "4edfd7e960f3923e",
+          "source_type": "book",
+          "text": "ਬਾਰੇ ਮਾਲ ਅਧਿਕਾਰੀ ਧਾਰਾ 119 ਦੇ ਉਪਬੰਧ ਮੁਤਬਿਕ ਇਹ ਨਿਰਣਾ ਕਰ\nਸਕਦਾ ਹੈ ਕਿ ਇਸ ਨੂੰ ਕਿਵੇਂ ਵਰਤਿਆ ਜਾਵੇਗਾ।\nAE ਅਜਿਹੀ ਸਾਂਝੀ ਰੱਖੀ ਗਈ ਜ਼ਮੀਨ ਉੱਤੇ ਕੋਈ ਵੀ\nਸਹਿ-ਹਿੱਸੇਦਾਰ ਨਾਜਾਇਜ਼ ਕਬਜ਼ਾ ਕਰ ਲਵੇ ਤਾਂ ਦੂਜਾ ਸਹਿ-ਹਿੱਸੇਦਾਰ ਧਾਰਾ\n150 ਤਹਿਤ: ਮਾਲ ਅਫ਼ਸਰ ਨੂੰ ਇਸ ਨਾਜਾਇਜ਼ ਕਬਜ਼ੇ ਨੂੰ ਖਾਲੀ ਕਰਵਾਉਣ\nBE ਦਰਖਾਸਤ ਦੇ ਸਕਦਾ ਹੈ ਅਤੇ ਮਾਲ ਅਫ਼ਸਰ ਅਜਿਹਾ ਨਾਜਾਇਜ਼\nਕਬਜ਼ਾ ਖਾਲੀ ਕਰਵਾ ਸਕਦਾ ਹੈ।",
+          "doc_title": "Jivtesh Zameen Di Guide (ਜਿਵਤੇਸ਼ ਜ਼ਮੀਨ ਦੀ ਗਾਈਡ) - Sohan Lal Bhumbak, PCS (Retd.), Krishna Publishing House, 2022",
+          "short_name": "Bhumbak",
+          "pdf_page": 183,
+          "printed_page": "168",
+          "section": null,
+          "source_url": "private copy (owner's PDF)",
+          "score": 0.03089,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": null,
+          "locator_verified": true,
+          "ocr_status": "needs_review",
+          "scan_verified": false,
+          "citation": "[Bhumbak, Book p.168; PDF p.183]",
+          "answer_id": "ca77dbc3-8f1e-416d-96b8-34aa11bd95f5"
+        },
+        {
+          "sid": "B4",
+          "chunk_id": "ac5a0a2717a2d24c",
+          "source_type": "book",
+          "text": "ਜਿੱਥੇ ਇਸ ਦਾ ਅਧਿਕਾਰ ਖੇਤਰ ਨਹੀਂ ਹੈ, .ਨੂੰ ਸੁਣਨ ਅਤੇ ਫ਼ੈਸਲਾ ਕਰਨ ਦਾ\n____ ਸਹਿਜ (ਇਨਹੈਰੰਟ) ਅਧਿਕਾਰ ਹੈ। ਪਰੰਤੁ ਅਧਿਕਾਰ ਖੇਤਰ ਦੀ ਬੰਦਸ਼ ਦਾ\nਇਹ ਅਰਥ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ ਕਿ ਦੀਵਾਨੀ ਅਦਾਲਤ ਕਿਸੇ ਅਜਿਹੇ\nਮਾਮਲੇ ਵਿੱਚ ਦਖਲ ਦੇ ਹੀ ਨਹੀਂ ਸਕਦੀ। ਜੇਕਰ ਕਿਸੇ ਮਾਮਲੇ ਵਿੱਚ ਕਿਸੇ\nਕਾਨੰਨ ਜਾਂ ਕਦਰਤੀ ਇੰਨਸਾਫ਼ ਦੀ ਉਲੰਘਣਾ ਕੀਤੀ ਗਈ ਹੋਵੇ ਤਾਂ ਦੀਵਾਨੀ\nਅਦਾਲਤ ਨੰ ਮਕੱਦਮੇਂ ਦੀ ਸਣਵਾਈ ਕਰਨ ਲਈ ਦਖਲ ਦੇਣ ਦਾ ਅਧਿਕਾਰ\nਪਾਪਤ ਹੈ ਪਰ ਦੀਵਾਨੀ ਅਦਾਲਤ ਦਾ ਖੇਤਰ ਸੀਮਤ ਵਿਸ਼ੇ ਲਈ ਹੀ ਹੈ।\nਸ਼ਾਮਲਾਤ ਜ਼ਮੀਨ ਤੋਂ ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਨੂੰ ਬੇਦਖ਼ਲ ਕਰਨਾ\nਜੇਕਰ ਕੋਈ ਵਿਅੱਕਤੀ ਸ਼ਾਮਲਾਤ ਜ਼ਮੀਨ ਤੇ ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਹੋਵੇ\nਤਾਂ ਉਸ ਨੰ ਬੇਦਖਲ ਕਰਨ ਲਈ ਸਬੰਧਤ ਪੰਚਾਇਤ ਇੱਕ ਪਟੀਸ਼ਨ ਪੰਜਾਬ\nਵਿਲੇਜ਼ ਕੋਮਨ ਲੈਂਡਜ਼ (ਰੈਗੁਲੇਸ਼ਨ) ਐਕਟ, 1961 ਦੀ ਧਾਰਾ 7 ਤਹਿਤ\nਕਲੈਕਟਰ ਦੀ ਅਦਾਲਤ ਵਿੱਚ ਦਾਇਰ ਕਰ ਸਕਦੀ ਹੈ।ਕਲੈਕਟਰ ਦੀ",
+          "doc_title": "Jivtesh Zameen Di Guide (ਜਿਵਤੇਸ਼ ਜ਼ਮੀਨ ਦੀ ਗਾਈਡ) - Sohan Lal Bhumbak, PCS (Retd.), Krishna Publishing House, 2022",
+          "short_name": "Bhumbak",
+          "pdf_page": 246,
+          "printed_page": "231",
+          "section": null,
+          "source_url": "private copy (owner's PDF)",
+          "score": 0.02778,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": null,
+          "locator_verified": true,
+          "ocr_status": "extracted",
+          "scan_verified": false,
+          "citation": "[Bhumbak, Book p.231; PDF p.246]",
+          "answer_id": "ca77dbc3-8f1e-416d-96b8-34aa11bd95f5"
+        },
+        {
+          "sid": "L1",
+          "chunk_id": "8ee2e7fe88c84c0d",
+          "source_type": "law",
+          "text": "150. Prevention of encroachment on common lands: - (1) Where land which has been reserved for the common purposes of the co-sharers therein has been encroached on by any co-sharer, a Revenue-officer may, on the application of any other co-sharer, eject the encroaching co-sharer from the land and, by order proclaimed in manner mentioned in section 22, forbid repetition of the encroachment.\n\n(2) The proceedings of the Revenue-officer under sub-section (1) shall be subject to any decree or order which may be subsequently passed by any Court of competent jurisdiction.",
+          "doc_title": "The Punjab Land Revenue Act, 1887 (Act XVII of 1887)",
+          "short_name": "PLRA 1887",
+          "pdf_page": null,
+          "printed_page": null,
+          "section": "150",
+          "source_url": "https://revenue.punjab.gov.in/?q=node/750",
+          "score": 0.06354,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": "section",
+          "locator_verified": true,
+          "ocr_status": null,
+          "scan_verified": false,
+          "citation": "[s.150, PLRA 1887]",
+          "answer_id": "ca77dbc3-8f1e-416d-96b8-34aa11bd95f5"
+        },
+        {
+          "sid": "L3",
+          "chunk_id": "bf8404178deedaaf",
+          "source_type": "law",
+          "text": "7. Power to put panchayat in possession of Shamilat deh-\n\n(1) The collector shall, on an application made to him by a panchayat, or (a) 2[by an officer, duly authorised in this behalf by the state government by a general or special order], after making such enquiry, as he may think fit and in accordance with such procedure as may be prescribed put the panchayat in possession of the land or other immovable property in the Shamilat deh of that village which vests or is deemed to have been vested in it under this Act and for so doing the collector may exercise the powers of a revenue court in relation to execution of a decree for possession of land under the Punjab Tenancy Act,1887.\n\n(2) An appeal against the order of the collector under sub-section(1) shall lie to the Commissioner and the period of limitation for such an appeal shall be sixty days from the date of the order appealed against.",
+          "doc_title": "The Punjab Village Common Lands (Regulation) Act, 1961 (Punjab Act 18 of 1961)",
+          "short_name": "PVCL Act 1961",
+          "pdf_page": null,
+          "printed_page": null,
+          "section": "7",
+          "source_url": "https://revenue.punjab.gov.in/?q=node/488",
+          "score": 0.04762,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": "section",
+          "locator_verified": true,
+          "ocr_status": null,
+          "scan_verified": false,
+          "citation": "[s.7, PVCL Act 1961]",
+          "answer_id": "ca77dbc3-8f1e-416d-96b8-34aa11bd95f5"
+        },
+        {
+          "sid": "B9",
+          "chunk_id": "41cffa2fadc4755e",
+          "source_type": "book",
+          "text": "ਵਿਲੇਜ਼ ਕੋਮਨ ਲੈਂਡਜ਼ (ਰੈਗੁਲੇਸ਼ਨ) ਐਕਟ, 1961 ਦੀ ਧਾਰਾ 7 ਤਹਿਤ\nਕਲੈਕਟਰ ਦੀ ਅਦਾਲਤ ਵਿੱਚ ਦਾਇਰ ਕਰ ਸਕਦੀ ਹੈ।ਕਲੈਕਟਰ ਦੀ\nਸ਼ਕਤੀਆਂ ਇਸ ਐਕਟ ਅਧੀਨ ਜ਼ਿਲ੍ਹਾ ਵਿਕਾਸ ਅਤੇ ਪੰਚਾਇਤ ਅਫ਼ਸਰਾਂ ਨੂੰ\nਦਿੱਤੀਆਂ ਹੋਈਆਂ ਹਨ।ਅਜਿਹਾ ਹੀ ਉਪਬੰਧ ਪੰਜਾਬ ਪਬਲਿਕ ਪਰੈਮਸਿਜ਼\nਐਂਡ ਲੈਂਡ (ਇਵਿਕਸ਼ਨ ਐਂਡ Fe ਰਿਕਵਰੀ) mae, 1973 ਵਿੱਚ ਵੀ ਹੈ\nਜਿਸ ਵਿੱਚ ਕਲੈਕਟਰ ਦੀ ਸ਼ਕਤੀਆਂ ਉਪ ਮੰਡਲ ਮੈਜਿਸਟਰੇਟਸ ਨੂੰ ਦਿੱਤੀਆਂ\nਗਈਆਂ ਹਨ। ਪੰਚਾਇਤ ਨੂੰ ਇਹ ਅਖ਼ਤਿਆਰ ਹੈ ਕਿ ਉਹ ਇਸ ਐਕਟ ਦੀ\nਧਾਰਾ 4 ਤਹਿਤ ਵੀ ਪਟੀਸ਼ਨ ਦਾਇਰ ਕਰਕੇ ਨਾਜਾਇਜ਼ ਕਾਬਜ਼ ਨੂੰ\nਪੰਚਾਇਤ ਦੀ ਜ਼ਮੀਨ ਤੋਂ ous ਕ",
+          "doc_title": "Jivtesh Zameen Di Guide (ਜਿਵਤੇਸ਼ ਜ਼ਮੀਨ ਦੀ ਗਾਈਡ) - Sohan Lal Bhumbak, PCS (Retd.), Krishna Publishing House, 2022",
+          "short_name": "Bhumbak",
+          "pdf_page": 246,
+          "printed_page": "231",
+          "section": null,
+          "source_url": "private copy (owner's PDF)",
+          "score": 0.0,
+          "neighbors": "",
+          "source_note": null,
+          "provision_kind": null,
+          "locator_verified": true,
+          "ocr_status": "extracted",
+          "scan_verified": false,
+          "citation": "[Bhumbak, Book p.231; PDF p.246]",
+          "answer_id": "ca77dbc3-8f1e-416d-96b8-34aa11bd95f5"
+        }
+      ]
+    }
+  ]
+}

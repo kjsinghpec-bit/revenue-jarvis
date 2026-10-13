@@ -1,0 +1,11 @@
+question_id,topic,language,question,gold_pages,notes
+H01,demarcation,en,Whose land can the kanungo demarcate and how is demarcation (nishandehi) done?,159-164,held-out: not used for tuning
+H02,inheritance,en,What is a kursinama and how many generations does it show?,84,held-out
+H03,registration,en,When is a person giving a power of attorney exempt from appearing personally at the registration office?,100-101,held-out
+H04,appeal,en,Within how many days can a party seek review of a revenue officer's decision?,129-130,held-out
+H05,records,pa,ਤਤੀਮੇ ਦਾ ਨਮੂਨਾ ਅਤੇ ਖਸਰਾ ਨੰਬਰ 3/1 3/2 ਕਿਵੇਂ ਬਣਦੇ ਹਨ?,303-305,held-out
+H06,inheritance,hi,गर्भ में पल रहे बच्चे का विरासत में क्या अधिकार है?,83,held-out
+H07,land_types,en,What is nazool land?,218-219;360,held-out
+H08,officers,en,What are the duties of a lambardar under the Punjab Land Revenue Rules 1909?,275-276,held-out
+H09,demarcation,pa,ਨਿਸ਼ਾਨਦੇਹੀ ਵੇਲੇ ਜਰੀਬ ਖਿੱਚਣ ਵਾਲੇ ਵਿਅੱਕਤੀ ਕਿਹੋ ਜਿਹੇ ਹੋਣ?,163-164,held-out
+H10,registration,en,How is a clerical mistake in a registered deed corrected?,99,held-out

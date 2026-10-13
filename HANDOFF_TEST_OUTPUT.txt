@@ -1,0 +1,161 @@
+........................................FFFF....F....................... [ 29%]
+........................................................................ [ 58%]
+........................................................................ [ 87%]
+...............................                                          [100%]
+=================================== FAILURES ===================================
+_ TestTier1F2OrientationTabular.test_tier1_f2_page_382_rotated_khasra_table_structure _
+
+self = <test_e2e_ocr_pipeline.TestTier1F2OrientationTabular object at 0x108c25f90>
+
+    def test_tier1_f2_page_382_rotated_khasra_table_structure(self):
+        """Page 382: 90° rotated Khasra table preserves Khasra numbers, total area, Khewat and Owner."""
+        rec = load_ocr_page(382)
+        text = page_text_combined(rec)
+    
+        # Rotated line-slicing noise must be eliminated
+>       assert "-200000000/01677301" not in text, "Page 382 contains unrotated character slicing noise (pending M2 repair)"
+E       AssertionError: Page 382 contains unrotated character slicing noise (pending M2 repair)
+E       assert '-200000000/01677301' not in '\n— -ਅਤਸਸਸਸ...ਤ--------\nu'
+E         
+E         '-200000000/01677301' is contained here:
+E           
+E           — -ਅਤਸਸਸਸਸ ਸ਼ਸਸੁੁੁੁਰਲਨਹਭ਼ਭਟਅਿ_- 1 -200000000/01677301 22-90007007779ਰ0977777557772੍‌ਸਸਭਝ7575751
+E         ?                                   +++++++++++++++++++
+E           11 ਸਿੰਘ ਚਾਹੀ
+E           ਹਿੱਸੇਦਾਰ 13 ਖਲ...
+E         
+E         ...Full output truncated (10 lines hidden), use '-vv' to show
+
+tests/test_e2e_ocr_pipeline.py:232: AssertionError
+_ TestTier1F2OrientationTabular.test_tier1_f2_page_383_jamabandi_12_column_annexure_structure _
+
+self = <test_e2e_ocr_pipeline.TestTier1F2OrientationTabular object at 0x108c26590>
+
+    def test_tier1_f2_page_383_jamabandi_12_column_annexure_structure(self):
+        """Page 383: 12-column Jamabandi template (Annexure 15) without horizontal interleaving or rotation noise."""
+        rec = load_ocr_page(383)
+        text = page_text_combined(rec)
+    
+        # Corrupted braces and inverted fragments eliminated
+>       assert "[BE || FE" not in text, "Page 383 contains corrupted bracket/column artifacts (pending M2 repair)"
+E       AssertionError: Page 383 contains corrupted bracket/column artifacts (pending M2 repair)
+E       assert '[BE || FE' not in '\nਜਮਾਬੰਦੀ T... FL\nEE ਨਗ ਨ'
+E         
+E         '[BE || FE' is contained here:
+E            | ® [723
+E           [BE || FE |ਨਾਮਮਾਲਕਤੇਹਾਲ]|ਕਾਸ਼ਕਕਾਰ [ਇ |] | ਇੰ |B |B [& | _
+E         ? +++++++++
+E           [($ 812 [7 [2] Bl Se [4 |B [ਕਥਨ ,
+E           ਰ੍ tt | |2| B | BE |E_| rE |&®]|...
+E         
+E         ...Full output truncated (11 lines hidden), use '-vv' to show
+
+tests/test_e2e_ocr_pipeline.py:246: AssertionError
+_ TestTier1F2OrientationTabular.test_tier1_f2_page_389_khasra_girdawari_register_structure _
+
+self = <test_e2e_ocr_pipeline.TestTier1F2OrientationTabular object at 0x108c26a10>
+
+    def test_tier1_f2_page_389_khasra_girdawari_register_structure(self):
+        """Page 389: 8-column Khasra Girdawari register (Annexure 18) with Sauni and Harhi harvest seasons."""
+        rec = load_ocr_page(389)
+        text = page_text_combined(rec)
+    
+        # Flattened noise strings eliminated
+>       assert "Taras of os os" not in text, "Page 389 contains horizontal column slicing noise (pending M2 repair)"
+E       AssertionError: Page 389 contains horizontal column slicing noise (pending M2 repair)
+E       assert 'Taras of os os' not in '\nਖਸਤਾ Tara...\n= ee NN S;'
+E         
+E         'Taras of os os' is contained here:
+E           
+E           ਖਸਤਾ Taras of os os ਨੀਨਈ8ਈਨਈ"7"), a 374
+E         ?      ++++++++++++++
+E           _ _ ਪਿੰਡ ਚਾਮਪੁਰ ਤਹਿਸੀਲ ਰਾਜਪੁਰਾ ਜਿਲ੍ਹਾ ਚ 19174 0 2008-13
+E           | ਤਂ ਜਮਾਂਬੰ ਬੰਦੀ ਦਾ ਨਜ਼ਰ ਦੀ ਦਰ (ਪੜਨ ਲੜਣ ਪਲਾਨ i ਜਮਾਂਬੰਦੀ ਦੀ ਫ਼ਸਲ | =a rr ਤਰ 0... ......
+E         
+E         ...Full output truncated (15 lines hidden), use '-vv' to show
+
+tests/test_e2e_ocr_pipeline.py:260: AssertionError
+_ TestTier1F2OrientationTabular.test_tier1_f2_bilingual_glossaries_no_horizontal_interleaving _
+
+self = <test_e2e_ocr_pipeline.TestTier1F2OrientationTabular object at 0x108c26c10>
+
+    def test_tier1_f2_bilingual_glossaries_no_horizontal_interleaving(self):
+        """Pages 346 & 368: Multi-column glossaries must not interleave Punjabi definitions with English columns."""
+        rec346 = load_ocr_page(346)
+        text346 = page_text_combined(rec346)
+>       assert "CalAVAL" not in text346, "Page 346 contains column bleeding noise 'CalAVAL' (pending M2 repair)"
+E       AssertionError: Page 346 contains column bleeding noise 'CalAVAL' (pending M2 repair)
+E       assert 'CalAVAL' not in '\n331\n[ ਸ਼...__[ਜਾਂਦਹੈ ||'
+E         
+E         'CalAVAL' is contained here:
+E            of India CalAVAL
+E         ?           +++++++
+E           | ਕੀਤਾ ਗਿਆ ਸੀ
+E           Hee ਦ਼ ਸਰਟੀਫਿਕੇਟ Certificate
+E           'ਸੈਹਦਾ . ਜਿਸਥਾਂ ਉੰਤੋਦੋ ਲੀਡ...
+E         
+E         ...Full output truncated (6 lines hidden), use '-vv' to show
+
+tests/test_e2e_ocr_pipeline.py:271: AssertionError
+_ TestTier1F3PrintedLabelCoverage.test_tier1_f3_staged_db_body_label_coverage_threshold _
+
+self = <test_e2e_ocr_pipeline.TestTier1F3PrintedLabelCoverage object at 0x108c25d10>
+staged_db_ro = <sqlite3.Connection object at 0x1097423e0>
+
+    def test_tier1_f3_staged_db_body_label_coverage_threshold(self, staged_db_ro):
+        """Staged database must achieve >95% printed page label coverage across 374 body pages (<15 unmapped)."""
+        doc_id = staged_db_ro.execute("SELECT id FROM documents WHERE slug='bhumbak-zameen-di-guide'").fetchone()[0]
+        rows = staged_db_ro.execute(
+            "SELECT pdf_page, printed_label, label_source FROM pages WHERE doc_id=? AND pdf_page>=? ORDER BY pdf_page",
+            (doc_id, FIRST_BODY_PDF_PAGE),
+        ).fetchall()
+    
+        total_body = len(rows)
+        assert total_body == 374, f"Expected 374 body pages (PDF 16..389), found {total_body}"
+    
+        mapped = [r for r in rows if r["printed_label"] is not None]
+        unmapped = [r for r in rows if r["printed_label"] is None]
+    
+        # Zero false mismatches rule: every mapped page must satisfy printed_label == pdf_page - 15
+        for r in mapped:
+            assert int(r["printed_label"]) == r["pdf_page"] - BODY_OFFSET, (
+                f"Page {r['pdf_page']} label mismatch: {r['printed_label']} != {r['pdf_page'] - BODY_OFFSET}"
+            )
+            assert r["label_source"] == "ocr_verified"
+    
+        # Coverage threshold: >95% (fewer than 15 unmapped body pages)
+        coverage_pct = (len(mapped) / total_body) * 100
+>       assert len(unmapped) < 15, (
+            f"Printed page label coverage {len(mapped)}/374 ({coverage_pct:.1f}%) is below 95% threshold; "
+            f"{len(unmapped)} body pages unmapped (pending M3 repair)"
+        )
+E       AssertionError: Printed page label coverage 322/374 (86.1%) is below 95% threshold; 52 body pages unmapped (pending M3 repair)
+E       assert 52 < 15
+E        +  where 52 = len([<sqlite3.Row object at 0x10937f9d0>, <sqlite3.Row object at 0x10937da50>, <sqlite3.Row object at 0x10937fa00>, <sqlite3.Row object at 0x10937f250>, <sqlite3.Row object at 0x10937c9d0>, <sqlite3.Row object at 0x10937f070>, ...])
+
+tests/test_e2e_ocr_pipeline.py:348: AssertionError
+=============================== warnings summary ===============================
+../../../.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /Users/karamjot/Projects/revenue-jarvis/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_ocr_review.py::test_page_image_uses_matching_original_pdf
+tests/test_ocr_review.py::test_page_image_uses_matching_original_pdf
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+tests/test_ocr_review.py::test_page_image_uses_matching_original_pdf
+tests/test_ocr_review.py::test_page_image_uses_matching_original_pdf
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+tests/test_ocr_review.py::test_page_image_uses_matching_original_pdf
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_e2e_ocr_pipeline.py::TestTier1F2OrientationTabular::test_tier1_f2_page_382_rotated_khasra_table_structure
+FAILED tests/test_e2e_ocr_pipeline.py::TestTier1F2OrientationTabular::test_tier1_f2_page_383_jamabandi_12_column_annexure_structure
+FAILED tests/test_e2e_ocr_pipeline.py::TestTier1F2OrientationTabular::test_tier1_f2_page_389_khasra_girdawari_register_structure
+FAILED tests/test_e2e_ocr_pipeline.py::TestTier1F2OrientationTabular::test_tier1_f2_bilingual_glossaries_no_horizontal_interleaving
+FAILED tests/test_e2e_ocr_pipeline.py::TestTier1F3PrintedLabelCoverage::test_tier1_f3_staged_db_body_label_coverage_threshold
+5 failed, 242 passed, 6 warnings in 8.06s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
